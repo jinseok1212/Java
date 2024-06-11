@@ -1,0 +1,25 @@
+package day14.api.util.date;
+
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+public class DateEx {
+	public static void main(String[] args) {
+		
+		//날짜를 나타내는 데이트객체
+		Date date = new Date();
+		System.out.println(date);
+		
+		//날짜를 -> 문자열로 형변환
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		String now = sdf.format(date);
+		
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss a")
+		
+		System.out.println(now);
+		
+		
+		
+	}
+
+}

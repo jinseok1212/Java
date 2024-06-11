@@ -1,0 +1,36 @@
+package quiz01;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();  // 테스트 케이스의 수
+        int[] results = new int[t];  // 결과를 저장할 배열
+
+        for (int i = 0; i < t; i++) {
+            int h = sc.nextInt();
+            int w = sc.nextInt();  // 사용하지 않음
+            int n = sc.nextInt();
+            
+            int floor = n % h;
+            int roomNumber = n / h;
+            
+            if (floor == 0) {
+                floor = h;
+            } else {
+                roomNumber += 1;
+            }
+            
+            results[i] = floor * 100 + roomNumber;
+        }
+
+        // 결과 출력
+        for (int i = 0; i < t; i++) {
+            System.out.println(results[i]);
+        }
+        
+        sc.close();
+    }
+}
+

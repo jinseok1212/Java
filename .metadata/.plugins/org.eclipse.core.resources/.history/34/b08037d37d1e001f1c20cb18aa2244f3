@@ -1,0 +1,26 @@
+package quiz01;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int maxPoint = 0;
+		int[] result = new int[a];
+		for(int i = 0; i < a; i++) {
+			int point = scan.nextInt();
+			result[i] = point;
+			if(maxPoint < point) {
+				maxPoint = point;
+			}
+		}
+		double average = 0;
+		for(int i = 0; i < a; i++) {
+			average = (result[i]/maxPoint*100)/a;
+		}
+		System.out.println(average);
+	}
+}

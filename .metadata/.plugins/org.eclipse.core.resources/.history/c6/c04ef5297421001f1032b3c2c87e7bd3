@@ -1,0 +1,25 @@
+package day14.api.collection.set;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSetEx {
+	public static void main(String[] args) {
+		
+		//set생성
+//		HashSet<String> set = new HashSet<>();
+		Set<String> set = new HashSet<>();
+		
+		//값 추가
+		set.add("java");
+		set.add("spring");
+		set.add("java");
+		set.add("python");
+		set.add("oracle");
+		set.add("jsp");
+		
+		//set의 크기
+		System.out.println("크기: " + set.size());
+	}
+
+}

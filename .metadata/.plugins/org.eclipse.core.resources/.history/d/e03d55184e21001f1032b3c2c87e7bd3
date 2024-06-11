@@ -1,0 +1,13 @@
+package day14.api.collection.queue;
+
+import java.util.ArrayDeque;
+
+public class Deque {
+	public static void main(String[] args) {
+		//양방향 큐 ( 양쪽 삽입 삭제)
+		//ArrayDeque<Integer> queue = new ArrayDeque<>();
+		Deque<Integer> queue = new ArrayDeque<>();
+		
+		//뒤에서 추가
+	}
+}

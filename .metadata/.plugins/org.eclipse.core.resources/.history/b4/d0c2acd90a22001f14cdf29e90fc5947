@@ -1,0 +1,18 @@
+package day14.api.collection.map;
+
+import java.util.TreeMap;
+
+public class TreeMapEx {
+
+	public static void main(String[] args) {
+		
+		//맵의 특징 + 키의 정렬
+		TreeMap<Integer, String> map = new TreeMap<>();
+		
+		map.put(10, "홍길동");
+		map.put(2, "이순신");
+		map.put(3, "홍길자");
+		map.put(5, "신사임당");
+		System.out.println(map.toString());
+	}
+}

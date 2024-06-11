@@ -1,0 +1,32 @@
+package quiz01;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int l = scan.nextInt();
+		String a = scan.next();
+
+		char[] arr = a.toCharArray();
+		int[] result = new int[arr.length];
+		int sum = 0;
+		//arr 배열(알파벳)을 숫자로 변환하기
+		for(int i = 0; i < arr.length; i++) {
+			 result[i] = arr[i] - 'a' + 1;
+			 int e = 31;
+			 if(i == 0) {
+				 sum += result[i];
+			 } else {
+				 for(int j = 0; j < i; j++) {
+				 	e *= e;
+				 }
+				 sum += result[i];
+			 }
+		}
+		System.out.println(sum);
+	}
+}

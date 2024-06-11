@@ -1,0 +1,27 @@
+package quiz01;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int a = scan.nextInt();
+		for (int i = 0; i < a; i++) {
+			int H = scan.nextInt();
+			int W = scan.nextInt();
+			int N = scan.nextInt();
+			int[][] arr = new int[H][W];
+			for (int j = 1; j < arr.length; j++) {
+				for (int j2 = 0; j2 < arr[j].length; j2++) {
+					arr[j][j2] =  j  +  j2;
+				}
+			} 
+				
+			
+		}
+	}
+}
+

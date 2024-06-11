@@ -1,0 +1,9 @@
+package quiz18;
+
+public class QueueQuiz02 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+}

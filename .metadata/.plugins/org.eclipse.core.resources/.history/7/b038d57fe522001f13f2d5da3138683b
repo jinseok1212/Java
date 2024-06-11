@@ -1,0 +1,24 @@
+package day16.ramda.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class MainClass02 {
+
+	public static void main(String[] args) {
+		//리스트에 랜덤한 값을 저장
+		List<Integer> list = new ArrayList<>();
+		
+		for(int i = 1; i <= 100; i++) {
+			list.add(new Random().nextInt(100) + 1);
+			
+		}
+		System.out.println("원본" + list.toString());
+		
+		System.out.println("-------------------------------------------");
+		
+		//중간처리메서드 -> 반환이 다시 Stream
+		list.stream().distinct().forEach(a -> System.out.print(a + " "));
+	}
+}

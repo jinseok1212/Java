@@ -1,0 +1,33 @@
+package quiz01;
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int c = scan.nextInt();
+		
+		int cnt = 0;
+		int total = 0;
+		
+		while(true) {
+			
+			if(total >= c) {
+				break;
+			}
+			
+			total += a;
+			total -= b;
+			cnt ++;			
+		}
+		
+		System.out.println(cnt);
+		
+		
+	}
+    
+}

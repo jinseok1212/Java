@@ -1,0 +1,25 @@
+package day15.api.io.directory;
+
+import java.io.File;
+
+public class CreateDirectory {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 자바에서는 외부경로로 폴더를 생성할 때 File클래스를 사용합니다.
+		 */
+		String path = "C:\\Users\\jin\\Desktop\\course\\java\\upload\\뉴폴더";
+		
+		try {
+			File file = new File(path);
+			
+			file.mkdir();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+	}
+}

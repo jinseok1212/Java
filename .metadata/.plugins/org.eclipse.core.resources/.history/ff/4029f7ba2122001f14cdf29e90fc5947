@@ -1,0 +1,33 @@
+package day15.api.io.readwrite;
+
+import java.io.FileReader;
+import java.io.Reader;
+
+public class FileReaderEx {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * 문자기반으로 읽어들이는 클래스 FileReader클래스 입니다.
+		 * 2바이트 단위여서 문자 읽기에 적합합니다.
+		 */
+		String path = "C:\\Users\\jin\\Desktop\\course\\java\\upload\\hello2.txt";
+		
+		Reader rd = null;
+		
+		try {
+			rd = new FileReader(path);
+			//한글자씩 읽기
+			while(true) {
+				int word = rd.read(); 
+				System.out.println((char)word);
+				if(word == -1) {
+					break;
+				}
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

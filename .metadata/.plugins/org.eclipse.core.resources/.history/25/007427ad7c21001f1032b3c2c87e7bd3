@@ -1,0 +1,14 @@
+package day14.api.collection.map;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapEx {
+
+	public static void main(String[] args) {
+		
+		//HashMap 객체 생성
+		//HashMap<Integer, String> map = new HashMap<>();
+		Map<Integer, String> map = new HashMap<>();
+	}
+}

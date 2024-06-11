@@ -1,0 +1,33 @@
+package quiz01;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		
+		int a = scan.nextInt();
+		int b = scan.nextInt();
+		int aA = a;
+		int bB = b;
+		int max = 0;
+		int min = 0;
+		if (a > b) {
+			while(b != 0) {
+				max = a % b;
+				a = b;
+				b = max;
+			}
+		} else {
+			while(a != 0) {
+				max = b % a;
+				b = a;
+				a = max;
+			}
+		}
+		min = aA * bB / max;
+		System.out.println(max);
+		System.out.println(min);
+	}
+}
